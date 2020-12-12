@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<VBox prefHeight="428.0" prefWidth="788.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1">
+  <children>
+    <MenuBar prefHeight="30.0" prefWidth="640.0" VBox.vgrow="NEVER">
+      <menus>
+        <Menu mnemonicParsing="false" text="Archivo">
+          <items>
+                  <SeparatorMenuItem mnemonicParsing="false" />
+                  <MenuItem fx:id="miExportar" mnemonicParsing="false" onAction="#exportarDatos" text="Exportar..." />
+            <SeparatorMenuItem mnemonicParsing="false" />
+            <MenuItem fx:id="miSalir" mnemonicParsing="false" onAction="#salir" text="Salir" />
+          </items>
+        </Menu>
+        <Menu mnemonicParsing="false" text="Ayuda">
+          <items>
+            <MenuItem mnemonicParsing="false" text="Ayuda" />
+          </items>
+        </Menu>
+      </menus>
+    </MenuBar>
+    <AnchorPane maxHeight="-1.0" maxWidth="-1.0" prefHeight="422.0" prefWidth="772.0" VBox.vgrow="ALWAYS">
+         <children>
+            <Label layoutX="55.0" layoutY="57.0" text="Nombre" />
+            <Label layoutX="48.0" layoutY="110.0" text="Desarrollador" />
+            <Label layoutX="48.0" layoutY="165.0" text="Plataforma" />
+            <TextField fx:id="tfNombre" layoutX="155.0" layoutY="53.0" />
+            <TextField fx:id="tfDesarrollador" layoutX="155.0" layoutY="106.0" />
+            <Button fx:id="btBuscar" layoutX="322.0" layoutY="106.0" mnemonicParsing="false" onAction="#buscarDesarrollador" prefHeight="25.0" prefWidth="58.0" text="Buscar" />
+            <ComboBox fx:id="cbPlataforma" layoutX="155.0" layoutY="161.0" prefWidth="150.0" />
+            <Button fx:id="btNuevo" layoutX="25.0" layoutY="241.0" mnemonicParsing="false" onAction="#nuevoJuego" prefHeight="25.0" prefWidth="84.0" text="Nuevo" />
+            <Button fx:id="btModificar" layoutX="155.0" layoutY="241.0" mnemonicParsing="false" onAction="#modificarJuego" prefHeight="25.0" prefWidth="84.0" text="Modificar" />
+            <Button fx:id="btEliminar" layoutX="280.0" layoutY="241.0" mnemonicParsing="false" onAction="#eliminarJuego" prefHeight="25.0" prefWidth="84.0" text="Eliminar" />
+            <Button fx:id="btGuardar" layoutX="38.0" layoutY="299.0" mnemonicParsing="false" onAction="#guardarJuego" prefHeight="25.0" prefWidth="150.0" text="Guardar" />
+            <Button fx:id="btCancelar" layoutX="238.0" layoutY="299.0" mnemonicParsing="false" onAction="#cancelar" prefHeight="25.0" prefWidth="84.0" text="Cancelar" />
+            <Label fx:id="lbEstado" layoutX="25.0" layoutY="372.0" prefHeight="17.0" prefWidth="357.0" textAlignment="CENTER" />
+            <TableView fx:id="tvJuegos" layoutX="403.0" layoutY="9.0" onMouseClicked="#seleccionarJuego" prefHeight="385.0" prefWidth="371.0" />
+         </children>
+    </AnchorPane>
+  </children>
+</VBox>

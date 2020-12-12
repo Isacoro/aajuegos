@@ -1,0 +1,9 @@
+com\isabel\aajuegos\domain\Juego.class
+com\isabel\aajuegos\JuegoDAO.class
+com\isabel\aajuegos\util\Alertas.class
+com\isabel\aajuegos\AppController.class
+com\isabel\aajuegos\util\R.class
+com\isabel\aajuegos\UsuarioController.class
+com\isabel\aajuegos\App.class
+com\isabel\aajuegos\UsuarioDAO.class
+com\isabel\aajuegos\domain\Usuario.class
